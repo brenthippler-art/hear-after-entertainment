@@ -1,0 +1,7 @@
+.about{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.about-img{aspect-ratio:4/5;overflow:hidden;position:relative;}
+.about-img img{position:absolute;inset:0;opacity:0;transition:opacity 1s ease;}
+.about-img img.is-active{opacity:1;}
+.about h2{margin-bottom:20px;}
+.about p{color:var(--slate);font-size:15.5px;margin-bottom:16px;max-width:480px;}
+@media(max-width:860px){.about{grid-template-columns:1fr;}.about-img{order:-1;}}

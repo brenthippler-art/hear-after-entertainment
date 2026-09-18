@@ -1,0 +1,48 @@
+:root{
+  --ink:#1C1F26;
+  --ivory:#F3F2EE;
+  --paper:#FBFAF8;
+  --brass:#A9843C;
+  --brass-soft:#D9C79A;
+  --wine:#5C2A34;
+  --slate:#6B7280;
+  --mist:#DDD9D0;
+}
+
+/*
+  Breakpoint scale — use these three values consistently across all
+  component stylesheets. CSS custom properties can't be used inside
+  @media conditions, so these are documented here rather than defined
+  as variables.
+
+    640px  — mobile: collapse to single column / smallest layouts
+    860px  — tablet: nav switches to hamburger, major grids stack
+    960px  — small desktop: last multi-column adjustments
+*/
+
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Public Sans',sans-serif;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+img{display:block;width:100%;height:100%;object-fit:cover;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
+h1,h2,h3{font-family:'Fraunces',serif;font-weight:500;}
+::selection{background:var(--brass-soft);color:var(--ink);}
+
+@media (prefers-reduced-motion: reduce) {
+  html{scroll-behavior:auto;}
+  *,
+  *::before,
+  *::after{
+    animation-duration:0.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:0.01ms !important;
+    scroll-behavior:auto !important;
+  }
+}
