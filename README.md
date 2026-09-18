@@ -1,5 +1,7 @@
 # Hear After Entertainment — Website
 
+Freelance client project: marketing site for Hear After Entertainment, a wedding DJ and event-coordination business. Built to a provided brand kit (ink/wine/brass palette, Fraunces + Public Sans typography
+
 React + Vite version of the marketing site, matching the brand kit
 (ink / wine / brass palette, Fraunces + Public Sans).
 
